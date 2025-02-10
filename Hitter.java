@@ -2,7 +2,7 @@ public class Hitter
 {
 
 	//instance variables
-	private String name;
+	private final String name;
 	private double avg;
 	
 	
@@ -11,7 +11,7 @@ public class Hitter
 	public Hitter(String name) 
 	{
 		this.name = name;
-		avg = average();
+		avg = Math.random() / 3;
 	}
 	//get average function
 	
@@ -33,6 +33,7 @@ public class Hitter
 			return false;
 		}
 	}
+	@Override
 	public String toString() 
 	{ 
 		String str = "Name: " + name + "Average: " + avg;
