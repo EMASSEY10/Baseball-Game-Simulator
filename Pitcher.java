@@ -30,6 +30,7 @@ public class Pitcher
 		this.average = average;
 	}
 	//toString function
+	@Override
 	public String toString() 
 	{ 
 		String str = "Name: " + name + "Average: " + average;
